@@ -8,7 +8,7 @@ export default {
 
   data() {
     return {
-      prefixCls: 'ant-tooltip'
+      prefixCls: 'bts-tooltip'
     }
   },
 

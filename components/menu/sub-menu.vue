@@ -1,12 +1,12 @@
 <template lang="html">
-  <li class="ant-menu-submenu"
+  <li class="bts-menu-submenu"
       :class="classes">
-    <div class="ant-menu-submenu-title" ref="submenu-title"
+    <div class="bts-menu-submenu-title" ref="submenu-title"
          :style="styles">
       <slot name="title"></slot>
     </div>
     <v-transition :type="transitionType">
-      <ul class="ant-menu ant-menu-sub"
+      <ul class="bts-menu bts-menu-sub"
           :class="subCls"
           v-show="opened">
         <slot></slot>
@@ -67,16 +67,16 @@
       },
       classes() {
         return [
-          this.mode === ENUM.MODE.HORIZONTAL && this.$parent.$options.name === 'VSubMenu' ? 'ant-menu-submenu-vertical' : `ant-menu-submenu-${this.mode}`,
+          this.mode === ENUM.MODE.HORIZONTAL && this.$parent.$options.name === 'VSubMenu' ? 'bts-menu-submenu-vertical' : `bts-menu-submenu-${this.mode}`,
           {
-            'ant-menu-submenu-open': this.opened,
-            'ant-menu-submenu-selected': this.selected,
-            'ant-menu-submenu-active': this.opened && this.mode === ENUM.MODE.HORIZONTAL && this.$parent.$options.name === 'VSubMenu'
+            'bts-menu-submenu-open': this.opened,
+            'bts-menu-submenu-selected': this.selected,
+            'bts-menu-submenu-active': this.opened && this.mode === ENUM.MODE.HORIZONTAL && this.$parent.$options.name === 'VSubMenu'
           }
         ]
       },
       subCls() {
-        return [this.mode === ENUM.MODE.HORIZONTAL ? 'ant-menu-vertical' : `ant-menu-${this.mode}`]
+        return [this.mode === ENUM.MODE.HORIZONTAL ? 'bts-menu-vertical' : `bts-menu-${this.mode}`]
       }
     },
     methods: {

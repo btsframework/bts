@@ -1,24 +1,11 @@
 class Transition {
   constructor() {
     this.props = {
-      'enter-active-class': 'ant-motion-collapse ant-motion-collapse-active',
-      'leave-active-class': 'ant-motion-collapse ant-motion-collapse-active'
+      'enter-active-class': 'bts-motion-collapse bts-motion-collapse-active',
+      'leave-active-class': 'bts-motion-collapse bts-motion-collapse-active'
     }
     this.on = {
       beforeEnter(el) {
-        // 获取隐藏的元素的高度
-        // const oldStyle = {
-        //   visibility: el.style.visibility,
-        //   position: el.style.position,
-        //   display: el.style.display
-        // }
-        // el.style.visibility = 'hidden'
-        // el.style.position = 'absolute'
-        // el.style.display = ''
-        // el.dataset.offsetHeight = el.offsetHeight
-        // Object.keys(oldStyle).forEach((key) => {
-        //   el.style[key] = oldStyle[key]
-        // })
         el.style.height = '0px'
       },
       enter(el) {

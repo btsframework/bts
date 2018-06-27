@@ -2,7 +2,7 @@
   <div v-clickoutside="hide">
     <slot name="title"></slot>
     <v-transition type="slide-up">
-      <div class="ant-dropdown"
+      <div class="bts-dropdown"
            :class="placementCls"
            ref="menu"
            v-show="visible">
@@ -37,7 +37,7 @@
     },
     data() {
       return {
-        prefixCls: 'ant-dropdown',
+        prefixCls: 'bts-dropdown',
         timeout: null
       }
     },

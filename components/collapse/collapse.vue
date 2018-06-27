@@ -1,6 +1,6 @@
 <template>
-  <div class="ant-collapse"
-       :class="{ 'ant-collapse-borderless': bordered}">
+  <div class="bts-collapse"
+       :class="{ 'bts-collapse-borderless': bordered}">
     <slot></slot>
   </div>
 </template>

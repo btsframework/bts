@@ -4,7 +4,7 @@
   </div>
 </template>
 <script type="text/babel">
-  const prefixCls = 'ant-col'
+  const prefixCls = 'bts-col'
 
   export default {
     name: 'VCol',

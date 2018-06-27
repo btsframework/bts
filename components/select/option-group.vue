@@ -1,5 +1,5 @@
 <template>
-  <v-menu-item-group prefixCls="ant-select-dropdown" :title="title">
+  <v-menu-item-group prefixCls="bts-select-dropdown" :title="title">
     <slot></slot>
   </v-menu-item-group>
 </template>

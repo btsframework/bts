@@ -1,5 +1,5 @@
 <template>
-  <v-menu-item prefixCls="ant-select-dropdown" :index="value" :disabled="disabled">
+  <v-menu-item prefixCls="bts-select-dropdown" :index="value" :disabled="disabled">
     <slot></slot>
   </v-menu-item>
 </template>

@@ -4,7 +4,7 @@
   </div>
 </template>
 <script type="text/babel">
-  const prefixCls = 'ant-btn-group'
+  const prefixCls = 'bts-btn-group'
 
   export default {
     name: 'VButtonGroup',

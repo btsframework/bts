@@ -12,7 +12,7 @@ export default {
 
   data() {
     return {
-      prefixCls: 'ant-popover'
+      prefixCls: 'bts-popover'
     }
   },
 
@@ -25,8 +25,8 @@ export default {
         return (
           <div class={ [`${data.prefixCls}-inner`] }>
             <div>
-              <div class="ant-popover-title">{ data.title || data.$slots.title}</div>
-              <div class="ant-popover-inner-content">{ data.content || data.$slots.content}</div>
+              <div class="bts-popover-title">{ data.title || data.$slots.title}</div>
+              <div class="bts-popover-inner-content">{ data.content || data.$slots.content}</div>
             </div>
           </div>)
       }

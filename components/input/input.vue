@@ -14,7 +14,7 @@
         :value="value"
         @input="onInput"
         @keyup.enter="onPressEnter">
-      <span class="ant-input-suffix" v-if="icon">
+      <span class="bts-input-suffix" v-if="icon">
         <i class="anticon" :class="iconCls"
            @click="onPressIcon"></i>
       </span>
@@ -41,7 +41,7 @@
 <style lang="less">
   @import './style/index.less';
 
-  .ant-input.pr26 {
+  .bts-input.pr26 {
     padding-right: 26px;
   }
 </style>
@@ -49,7 +49,7 @@
 <script type="text/babel">
   import calcTextareaHeight from '../utils/calcTextareaHeight'
 
-  const prefixCls = 'ant-input'
+  const prefixCls = 'bts-input'
 
   export default {
     name: 'VInput',

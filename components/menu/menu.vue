@@ -17,7 +17,7 @@
     props: {
       prefixCls: {
         type: String,
-        default: 'ant'
+        default: 'bts'
       },
       mode: {
         type: String,

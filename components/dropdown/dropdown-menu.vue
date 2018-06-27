@@ -1,5 +1,5 @@
 <template>
-  <v-menu prefixCls="ant-dropdown" @onSelect="onSelect">
+  <v-menu prefixCls="bts-dropdown" @onSelect="onSelect">
     <slot></slot>
   </v-menu>
 </template>
@@ -21,7 +21,7 @@
 </script>
 
 <style scoped>
-  .ant-dropdown-menu {
+  .bts-dropdown-menu {
     margin: 4px 0px;
   }
 </style>

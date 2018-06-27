@@ -5,7 +5,7 @@
   </button>
 </template>
 <script type="text/babel">
-  const prefixCls = 'ant-btn'
+  const prefixCls = 'bts-btn'
   const iconPrefixCls = 'anticon'
 
   export default {

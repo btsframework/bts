@@ -1,17 +1,17 @@
 <template>
-  <div class="ant-collapse-item"
-       :class="{ 'ant-collapse-item-active': active }">
-    <div class="ant-collapse-header" role="tab"
+  <div class="bts-collapse-item"
+       :class="{ 'bts-collapse-item-active': active }">
+    <div class="bts-collapse-header" role="tab"
          :aria-expanded="active"
          @click="onHeaderClick">
       <i class="arrow"></i>
       {{header}}
     </div>
     <v-transition type="collapse">
-      <div class="ant-collapse-content" role="tabpanel"
+      <div class="bts-collapse-content" role="tabpanel"
            v-show="active"
-           :class=" { 'ant-collapse-content-active': active }">
-        <div class="ant-collapse-content-box">
+           :class=" { 'bts-collapse-content-active': active }">
+        <div class="bts-collapse-content-box">
           <slot></slot>
         </div>
       </div>

@@ -4,7 +4,7 @@
     <v-row>
       <v-col :span="12">
         <v-dropdown>
-          <a className="ant-dropdown-link" href="javascript:;" slot="title">
+          <a className="bts-dropdown-link" href="javascript:;" slot="title">
             Cascading menu
             <v-icon type="down"/>
           </a>
@@ -18,7 +18,7 @@
 
       <v-col :span="12">
         <v-dropdown trigger="click">
-          <a className="ant-dropdown-link" href="javascript:;" slot="title">
+          <a className="bts-dropdown-link" href="javascript:;" slot="title">
             Cascading menu
             <v-icon type="down"/>
           </a>

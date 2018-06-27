@@ -1,43 +1,43 @@
 <template>
-  <div class="ant-select ant-select-enabled"
+  <div class="bts-select bts-select-enabled"
        v-clickoutside="hide"
        :class="selectCls"
        @keydown.enter.prevent="selectOption"
        @keydown.esc.prevent="onPressEsc"
        @keydown.down.prevent="changeActive('next')"
        @keydown.up.prevent="changeActive('prev')">
-    <div class="ant-select-selection ant-select-selection--single" tabindex="0">
-      <div class="ant-select-selection__rendered">
+    <div class="bts-select-selection bts-select-selection--single" tabindex="0">
+      <div class="bts-select-selection__rendered">
         <template v-if="!showSearch">
-          <div class="ant-select-selection-selected-value" style="display: block; opacity: 1;"
+          <div class="bts-select-selection-selected-value" style="display: block; opacity: 1;"
                :title="currentValue || placeholder">
             {{ currentValue || placeholder }}
           </div>
         </template>
         <template v-else>
-          <div unselectable="unselectable" class="ant-select-selection__placeholder"
+          <div unselectable="unselectable" class="bts-select-selection__placeholder"
                style="user-select: none;"
                v-show="!visible && currentValue === ''">{{ placeholder }}
           </div>
-          <div class="ant-select-selection-selected-value"
+          <div class="bts-select-selection-selected-value"
                :style="{ opacity : (visible?0.4:1)}"
                :title="currentValue || placeholder"
                v-show="composition">
             {{ currentValue || placeholder }}
           </div>
-          <div class="ant-select-search ant-select-search--inline" v-show="visible">
-            <div class="ant-select-search__field__wrap">
-              <input value="" class="ant-select-search__field"
+          <div class="bts-select-search bts-select-search--inline" v-show="visible">
+            <div class="bts-select-search__field__wrap">
+              <input value="" class="bts-select-search__field"
                      ref="searchInput"
                      v-model="searchKey">
-              <span class="ant-select-search__field__mirror"></span>
+              <span class="bts-select-search__field__mirror"></span>
             </div>
           </div>
         </template>
       </div>
-      <span class="ant-select-arrow" unselectable="unselectable" style="user-select: none;"><b></b></span></div>
+      <span class="bts-select-arrow" unselectable="unselectable" style="user-select: none;"><b></b></span></div>
     <v-transition type="slide-up">
-      <div class="ant-select-dropdown"
+      <div class="bts-select-dropdown"
            :class="placementCls"
            ref="dropdown"
            v-show="visible">
@@ -60,7 +60,7 @@
   @import "./style/index.less";
   @import "../input/style/index.less";
 
-  .ant-select-dropdown {
+  .bts-select-dropdown {
     margin: 4px 0px;
   }
 </style>
@@ -99,7 +99,7 @@
     },
     data() {
       return {
-        prefixCls: 'ant-select-dropdown',
+        prefixCls: 'bts-select-dropdown',
         focused: false,
         currentValue: this.value,
         searchKey: '',
@@ -118,10 +118,10 @@
       },
       selectCls() {
         return {
-          [`ant-select-${this.sizeCls}`]: !!this.sizeCls,
-          'ant-select-focused': this.focused,
-          'ant-select-open': this.visible,
-          'ant-select-disabled': this.disabled
+          [`bts-select-${this.sizeCls}`]: !!this.sizeCls,
+          'bts-select-focused': this.focused,
+          'bts-select-open': this.visible,
+          'bts-select-disabled': this.disabled
         }
       },
       composition() {

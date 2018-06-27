@@ -4,7 +4,7 @@
   </div>
 </template>
 <script type="text/babel">
-  const prefixCls = 'ant-row'
+  const prefixCls = 'bts-row'
 
   export default {
     name: 'VRow',
